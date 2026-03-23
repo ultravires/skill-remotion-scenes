@@ -13,4 +13,5 @@ Use this skills whenever you are dealing with Remotion code to obtain the domain
 
 Read individual rule files for detailed explanations and code examples:
 
+- [rules/settings.md](rules/settings.md) - Settings for Remotion
 - [rules/danmaku.md](rules/danmaku.md) - Bullet / danmaku / 弹幕 screen scene implementation in Remotion
