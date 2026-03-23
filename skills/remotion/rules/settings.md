@@ -32,14 +32,32 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
-const chromePath = path.join(
-  os.homedir(),
-  '.remotion',
-  'chrome-headless-shell',
-  'mac-arm64',
-  'chrome-headless-shell-mac-arm64',
-  'chrome-headless-shell'
-);
+let chromePath: string;
+
+switch (process.platform) {
+  case 'win32':
+    chromePath = path.join(
+      os.homedir(),
+      '.remotion',
+      'chrome-headless-shell',
+      'win64',
+      'chrome-headless-shell-win64',
+      'chrome-headless-shell.exe'
+    );
+    break;
+  case 'darwin'
+    chromePath = path.join(
+      os.homedir(),
+      '.remotion',
+      'chrome-headless-shell',
+      'mac-arm64',
+      'chrome-headless-shell-mac-arm64',
+      'chrome-headless-shell'
+    );
+    break;
+  default:
+    break;
+}
 
 Config.setEntryPoint('src/index.tsx');
 
