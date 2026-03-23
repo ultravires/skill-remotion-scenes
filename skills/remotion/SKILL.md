@@ -9,6 +9,12 @@ metadata:
 
 Use this skills whenever you are dealing with Remotion code to obtain the domain-specific knowledge.
 
+## Create project first
+
+```sh
+npx create-video@latest
+```
+
 ## How to use
 
 Read individual rule files for detailed explanations and code examples:
