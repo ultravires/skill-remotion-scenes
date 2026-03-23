@@ -1,6 +1,6 @@
 ---
 name: skill-remotion-scenes
-description: Best practices for Remotion - Video creation in React
+description: Best scenes for Remotion - Video creation in React
 metadata:
   tags: remotion, video, react, animation, composition
 ---
