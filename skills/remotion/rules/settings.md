@@ -43,7 +43,7 @@ switch (process.platform) {
       'chrome-headless-shell.exe'
     );
     break;
-  case 'darwin'
+  case 'darwin':
     chromePath = path.join(
       os.homedir(),
       '.remotion',
