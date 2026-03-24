@@ -1,11 +1,12 @@
-import {Composition, Series} from 'remotion';
+import {AbsoluteFill, Composition, Series} from 'remotion';
+import {VIDEO_RADIAL_BACKGROUND} from './design-system/tokens';
 import {HeroScene} from './Scene';
 import {DanmakuScene} from './DanmakuScene';
 import {TerminalScene, TERMINAL_DURATION} from './TerminalScene';
 import {SectionTitle} from './components/SectionTitle';
 import {EditorScene} from './EditorScene';
 
-const HERO_DURATION = 90;
+const HERO_DURATION = 180;
 const DANMAKU_DURATION = 120; // Extended slightly for better view
 const SECTION_TITLE_DURATION = 90;
 const EDITOR_DURATION = 300;
@@ -21,6 +22,7 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="HeroVideo"
 				component={() => (
+					<AbsoluteFill style={{background: VIDEO_RADIAL_BACKGROUND}}>
 					<Series>
 						<Series.Sequence durationInFrames={HERO_DURATION}>
 							<HeroScene />
@@ -44,6 +46,7 @@ export const RemotionRoot: React.FC = () => {
 							<DanmakuScene />
 						</Series.Sequence>
 					</Series>
+					</AbsoluteFill>
 				)}
 				durationInFrames={TOTAL_DURATION}
 				fps={30}

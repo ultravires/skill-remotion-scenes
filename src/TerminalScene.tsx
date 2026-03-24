@@ -43,7 +43,6 @@ export const TerminalScene: React.FC = () => {
 	return (
 		<AbsoluteFill
 			style={{
-				backgroundColor: '#020617',
 				justifyContent: 'center',
 				alignItems: 'center',
 				padding: 60,

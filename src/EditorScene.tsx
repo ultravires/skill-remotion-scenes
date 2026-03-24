@@ -1,7 +1,6 @@
 import React from 'react';
 import { AbsoluteFill } from 'remotion';
 import { CodeEditor } from './components/Terminal/CodeEditor';
-import { COLORS } from './design-system/tokens';
 
 const CODE = `import { useCurrentFrame, interpolate } from 'remotion';
 
@@ -35,7 +34,6 @@ export const EditorScene: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: COLORS.background,
         justifyContent: 'center',
         alignItems: 'center',
         padding: 80,

@@ -80,7 +80,7 @@ export const DanmakuScene: React.FC = () => {
 	}, [durationInFrames]);
 
 	return (
-		<AbsoluteFill style={{backgroundColor: '#020617'}}>
+		<AbsoluteFill>
 			<div style={{position: 'absolute', inset: 0, opacity: 0.3}}>
 				{/* Background Title for context */}
 				<div

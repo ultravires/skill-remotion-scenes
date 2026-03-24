@@ -97,7 +97,6 @@ export const HeroScene: React.FC = () => {
 			style={{
 				justifyContent: 'center',
 				alignItems: 'center',
-				backgroundColor: '#020617',
 				fontFamily: 'system-ui, -apple-system, sans-serif',
 				padding: '0 40px',
 			}}

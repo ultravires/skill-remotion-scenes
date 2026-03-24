@@ -49,7 +49,6 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: COLORS.background,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
