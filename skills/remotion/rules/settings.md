@@ -11,7 +11,7 @@ Custom Remotion environment configuration for optimized rendering and local brow
 
 ## When to use
 
-When create new Remotion project.
+When creating a new Remotion project.
 
 ## Features
 
