@@ -9,12 +9,6 @@ metadata:
 
 Custom Remotion environment configuration for optimized rendering and local browser detection.
 
-## How to use
-
-```sh
-
-```
-
 ## Features
 
 - Auto-detect local chrome-headless-shell in a `~/.remotion`
