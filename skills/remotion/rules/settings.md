@@ -9,6 +9,10 @@ metadata:
 
 Custom Remotion environment configuration for optimized rendering and local browser detection.
 
+## When to use
+
+When create new Remotion project.
+
 ## Features
 
 - Auto-detect local chrome-headless-shell in a `~/.remotion`
@@ -60,5 +64,3 @@ try {
   Config.setBrowserExecutable(chromePath);
 } catch (_) {}
 ```
-
-Reference document: [chrome-headless-shell](https://www.remotion.dev/docs/miscellaneous/chrome-headless-shell)
