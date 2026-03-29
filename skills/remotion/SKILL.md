@@ -38,5 +38,6 @@ npx create-video@latest
 | [rules/code-editor.md](rules/code-editor.md) | Code demo: highlight.js + per-character reveal + auto-scroll |
 | [rules/terminal.md](rules/terminal.md) | Fake terminal, typewriter command output, header bar |
 | [rules/danmaku.md](rules/danmaku.md) | Horizontal bullet comments / 弹幕 over video |
+| [rules/subtitles.md](rules/subtitles.md) | Subtitle / caption overlay scenes with audio timeline sync |
 
 Do not load every rule up front—pull in the file that matches the current scene to keep context lean.
