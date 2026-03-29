@@ -1,5 +1,14 @@
-import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {
+	AbsoluteFill,
+	Audio,
+	interpolate,
+	spring,
+	staticFile,
+	useCurrentFrame,
+	useVideoConfig,
+} from 'remotion';
 import React from 'react';
+import {CaptionOverlay, type SceneCaption} from './components/CaptionOverlay';
 
 const Title: React.FC<{text: string; frame: number; fps: number}> = ({text, frame, fps}) => {
 	const opacity = interpolate(frame, [0, 15], [0, 1]);
@@ -77,6 +86,10 @@ const FeatureItem: React.FC<{text: string; frame: number; fps: number; index: nu
 	);
 };
 
+const scene1Captions: SceneCaption[] = [
+	{startMs: 0, endMs: 3900, text: '大家好，我是你们的新朋友——浅安。'},
+];
+
 export const HeroScene: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
@@ -101,6 +114,7 @@ export const HeroScene: React.FC = () => {
 				padding: '0 40px',
 			}}
 		>
+			<Audio src={staticFile('开场白.wav')} />
 			<Title text="skill-remotion-scenes" frame={frame} fps={fps} />
 			<Subtitle text="专业的场景视频生成技能" frame={frame} fps={fps} />
 			
@@ -117,6 +131,7 @@ export const HeroScene: React.FC = () => {
 					<FeatureItem key={feature} text={feature} index={i} frame={frame} fps={fps} />
 				))}
 			</div>
+			<CaptionOverlay frame={frame} fps={fps} captions={scene1Captions} />
 		</AbsoluteFill>
 	);
 };
